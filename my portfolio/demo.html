@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box {
+      position: relative;
+      max-width: 300px; /* Set the maximum width for the box */
+      margin: 20px auto; /* Center the box horizontally with some margin */
+      padding: 20px;
+      list-style: none;
+    }
+
+    .box li {
+      position: relative;
+      margin-bottom: 10px; /* Add some margin between list items for clarity */
+      padding: 10px; /* Add padding to each list item for better appearance */
+      border: 1px solid #ccc; /* Add a border to each list item */
+      border-radius: 5px; /* Round the corners of each list item */
+    }
+
+    .box li::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%; /* Adjust the background color limit for each list item */
+      height: 100%;
+      background-color: #3498db; /* Set a background color for the pseudo-element */
+      z-index: -1; /* Place the pseudo-element behind the content of the list item */
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <li>Your content goes here</li>
+  <li>Your content goes here</li>
+  <li>Your content goes here</li>
+  <li>Your content goes here</li>
+  <li>Your content goes here</li>
+</div>
+
+</body>
+</html>
